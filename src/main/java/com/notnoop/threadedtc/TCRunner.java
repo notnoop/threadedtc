@@ -30,7 +30,6 @@ public class TCRunner extends BlockJUnit4ClassRunner {
     private static final class TCStatement extends InvokeMethod {
         private final Object target;
         private final int times;
-//        private Conductor c = new Conductor();
         boolean ignored;
 
         public TCStatement(FrameworkMethod testMethod, Object target, int count) {
