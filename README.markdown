@@ -1,6 +1,7 @@
 ThreadedTC Testing Framework
 ===================================
 
+
 ThreadedTC is a library for testing multi-threaded programs and controllers.
 It provides a best-effort approach to detecting deadlocks and timeouts.
 It integrates well with testing frameworks, especially JUnit.
@@ -13,7 +14,7 @@ Conductor's waitForBeat method, which will cause the thread to block until
 that beat has been reached. The Conductor will advance the beat only when all
 threads participating in the test are blocked. By tying the timing of thread
 activities to specific beats, you can write tests for concurrent systems that
-have deterministic interleavings of threads. 
+have deterministic interleavings of threads.
 
 The library is based on the works of [`scalatest`](http://www.scalatest.org/).
 The concurrency utilities classes are based on CMU's
